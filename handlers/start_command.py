@@ -51,7 +51,7 @@ async def welcome(message: types.Message):
         #await bot.send_sticker(message.chat.id, sti)
 
         #Photo
-        photo = open('/home/heldan/TeleBot1/pictures/vnsk.JPEG','rb')
+        photo = open('/home/heldan/TeleBot1/pictures/vnsk.png','rb')
         #photo_3 = open('/home/heldan/TeleBot/pictures/photo 3.jpg','rb')
 
         await bot.send_photo(message.from_user.id, photo, var.Welcome_message.format(message.from_user),
@@ -98,5 +98,6 @@ async def other_movies(call: types.CallbackQuery):
                         [              
                             InlineKeyboardButton(text='Подать заявку', url='https://t.me/+JZeq1D9z50I4NGEy')
                         ]])
+
 
     await bot.send_message(call.from_user.id, var.main_mess, reply_markup=markup)
