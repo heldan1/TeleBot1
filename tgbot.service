@@ -6,9 +6,10 @@ After=network.target
 User=heldan
 Group=heldan
 
-WorkingDirectory=/home/heldan/TeleBot/
-Environment="PYTHONPATH=/home/heldan/TeleBot/"
-ExecStart=/home/heldan/TeleBot/.venv/bin/python /home/heldan/TeleBot/polling.py
+WorkingDirectory=/home/heldan/TeleBot1/
+Environment="PYTHONPATH=/home/heldan/TeleBot1/"
+ExecStart=/home/heldan/TeleBot1/.venv/bin/python /home/heldan/TeleBot1/polling.py
 
 [Install]
 WantedBy=multi-user.target
+
