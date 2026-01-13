@@ -19,7 +19,7 @@ Start_btn.insert(btn70)
 
 pod_main_btn = InlineKeyboardButton(text='Смотреть новинку ▶️', callback_data="checksub")
 pod_btn = InlineKeyboardMarkup(row_width=1)
-pod_btn.insert(main_btn)
+#pod_btn.insert(main_btn)
 
 
 
