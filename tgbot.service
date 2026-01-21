@@ -3,14 +3,15 @@ Description=Telegram Bot
 After=network.target
 
 [Service]
-User=heldan1
-Group=heldan1
+User=heldan
+Group=heldan
 
-WorkingDirectory=/home/heldan1/TeleBot1/
+WorkingDirectory=/home/heldan/TeleBot1/
 Environment="PYTHONPATH=/home/heldan1/TeleBot1/"
-ExecStart=/home/heldan1/TeleBot1/.venv/bin/python /home/heldan1/TeleBot1/polling.py
+ExecStart=/home/heldan/TeleBot1/.venv/bin/python /home/heldan/TeleBot1/polling.py
 
 [Install]
 WantedBy=multi-user.target
+
 
 
